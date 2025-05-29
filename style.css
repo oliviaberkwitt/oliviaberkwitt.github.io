@@ -63,7 +63,7 @@ h3 {
 
 .negativeone {
     /* background-color: rgb(159, 117, 81); */
-    background: linear-gradient(90deg,rgba(55, 61, 31, 0.5) 0%, rgba(171, 78, 104, 0.5) 100%), url("https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/pods-on-branch.webp?v=1745964024342");
+    background: linear-gradient(90deg,rgba(55, 61, 31, 0.5) 0%, rgba(171, 78, 104, 0.5) 100%), url(Project1/Images/pods-on-branch.webp);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -102,6 +102,11 @@ button {
   }
 }
 
+#startBtn {
+  font-size:2rem;
+  width: 600px;
+}
+
 /*         #startBtn {
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -111,6 +116,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 #startBtn:hover {
     background-color: #6d4c41;
@@ -309,7 +315,7 @@ button {
 /* start of section two (Fermentation) */
 
 .two {
-  background: url("https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/fermentation.png?v=1745966529394");
+  background: url(Project1/Images/fermentation.png);
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: bottom;
@@ -401,16 +407,26 @@ button {
 }
 
 .readout {
-  font-size: 2rem;
-  color: rgba(237, 239, 223, 1);
+  font-size: 1.5rem;
+  color: rgba(237, 239, 223, 1); 
   font-weight: 800;
   text-shadow: 1px 1px 2px black;
 }
 
 .header-and-body {
+  background-color: rgba(55, 61, 31, 0.75);
+  border-radius: 0 0 50px 0;
+  position: absolute;
+  top:0%;
+  left: 0%;
+  margin: 0;
+  height: auto;
+  width: 65%;
+  font-size: 1.25rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
 }
 
 .fermentation-text {
@@ -418,18 +434,17 @@ button {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  color: #;
   
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   opacity: 0;
   transition: opacity 1s ease-in;
   font-size: 1.5rem;
   line-height: 1.5;
   
-  background-color: rgba(55, 61, 31, 0.8);
+  /* background-color: rgba(55, 61, 31, 0.8);
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 20px; */
   
   margin-left: 4rem;
 }
@@ -480,24 +495,40 @@ button {
 /* start of section three (Drying) */
 
 .three { 
-  background: linear-gradient(90deg, rgba(55, 61, 31, .7) 0%,rgba(146, 150, 127, 0.7) 50%, rgba(237, 239, 223, 0.7) 100%),url(https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/beans-drying.jpeg?v=1746057253770); 
+  background: linear-gradient(90deg, rgba(55, 61, 31, .7) 0%,rgba(146, 150, 127, 0.7) 50%, rgba(237, 239, 223, 0.7) 100%), url(Project1/Images/beans-drying.jpeg); 
   background-repeat: no-repeat;
   background-size: cover; 
   padding: 4rem;
   font-size: 1.25rem;
+}
+
+.three-left {
+ background-color: rgba(55, 61, 31, 0.75);
+  padding: 32px;
+  border-radius: 0 0 50px 0;
+  position: absolute;
+  top:0%;
+  left: 0%;
+  margin: 0;
+  height: auto;
+  width: 65%;
+  font-size: 1.25rem;
   
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
 }
 
-.three h2 {
+/* .three h2 {
   color: rgba(55, 61, 31, 1);
-}
+} */
 
-.three p {
+/* .three p {
   background-color: rgba(55, 61, 31, 0.75);
   padding: 16px;
   border-radius: 20px;
   width: 50%;
-}
+} */
 
 @media (max-width: 640px) {
   .three p {
@@ -507,7 +538,7 @@ button {
 
 /* start of section four (Roasting) */
 .four {
-  background: linear-gradient(90deg, rgba(55, 61, 31, .5) 0%, rgba(0, 0, 0, 0.25) 100%), url(https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/beans-roasting.jpeg?v=1746057561982);
+  background: linear-gradient(90deg, rgba(55, 61, 31, .5) 0%, rgba(0, 0, 0, 0.25) 100%), url(Project1/Images/beans-roasting.jpeg);
   background-repeat: no-repeat;
   background-size: cover; 
   padding: 4rem;
@@ -515,14 +546,14 @@ button {
 
 .four-left {
   background-color: rgba(55, 61, 31, 0.75);
-  padding: 16px;
+  padding: 32px;
   border-radius: 50px 0 0 0;
   position: absolute;
   bottom:0%;
   right: 0%;
   margin: 0;
   height: auto;
-  width: 30%;
+  width: 65%;
   font-size: 1.25rem;
   
   display: flex;
@@ -639,11 +670,11 @@ button {
 }
 
 .right-grinding {
-  background: url("https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/grinder.webp?v=1746137019232");
+  background: url(Project1/Images/grinder.webp);
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: bottom;
-  position: relative
+  position: relative;
 }
 
 .grinding-particles {
@@ -661,7 +692,7 @@ button {
   bottom: 30%;
   width: 10px;
   height: 10px;
-  background-color: #5b3720; /* chocolatey brown */
+  background-color: #5b3720;
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -755,8 +786,8 @@ button {
   border-radius: 20px;
 
   display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
+  justify-content: center;
+  align-items: center;
   
   height: 25vh;
 }
@@ -780,8 +811,8 @@ button {
 
 .choco-streak {
   position: absolute;
-  top: 300px; /* adjust as needed */
-  left: 600px; /* match to spoon tip */
+  top: 300px;
+  left: 600px;
   width: 150px;
   opacity: 0;
   pointer-events: none;
@@ -816,22 +847,166 @@ button {
 }
 
 
-/* start of section 9 */
+/* start of section 9: molding */
 
 .nine {
   padding: 6rem 2rem;
   background: linear-gradient(90deg,rgba(55, 61, 31) 0%, rgba(171, 78, 104) 100%);
   position: relative;
   z-index: 1;
+  display: flex;
 }
 
-/* start of section 10 */
+.molding-left {
+  max-width: 40%;
+}
 
-.ten {
+.molding-left button {
+  font-size: 1.5rem;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.chocolate-line {
+  fill: none;
+  stroke: #5b3f1d;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.pour-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 20%;
+  min-height: 100%;
+  margin: 0 auto 2rem;
+}
+
+.top-image {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 2;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: 80px;
+  left: 30%;
+  transform: translateX(-50%);
+  width: 400px;
+  transition: opacity 0.5s ease;
+}
+
+.mold-empty {
+  z-index: 2;
+  opacity: 1;
+}
+
+.mold-filled {
+  z-index: 3;
+  opacity: 0;
+}
+
+#chocolate-line-svg {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 4;
+  max-width: 100%;
+  height: 50%;
+  overflow: visible;
+}
+
+/* start of section 10: wrapping */
+
+.wrap {
   padding: 6rem 2rem;
   background: linear-gradient(90deg, rgba(171, 78, 104) 0%, rgba(55, 61, 31) 100%);
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap p {
+  max-width: 40%;
+}
+
+.wrap-text {
+position: fixed;
+padding: 6rem 2rem;
+max-width: 40%;
+}
+
+.ten {
+  width: 100%;
+  height: 200vh;
+  background: linear-gradient(90deg, rgba(171, 78, 104) 0%, rgba(55, 61, 31) 100%);
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.container .ui-controls {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  font-family: sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.container .ui-controls div {
+  color: black;
+}
+
+.container button {
+  /*     display: inline-block; */
+  display: none;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1em;
+  margin-right: 0.2em;
+}
+.container button.disabled {
+  pointer-events: none;
+  cursor: auto;
+  opacity: 0.3;
+}
+
+a {
+  color: #ab4e68;
+  background-color:#edefdf;
+  border: none;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.9);
+  font-size: 1.5rem;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
 /* start of section 11 */

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.51 239.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5b3f1d;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="chocolate-pour">
+    <path class="cls-1" d="M15.12,1.54c8.16,10.48,17.75,26.42,14.09,42.67-3.58,15.88-16.58,17.71-19.72,33.81-4.07,20.86,15.75,28.1,12.88,49.91-2.7,20.55-21.68,24.76-19.72,41.86,1.33,11.61,10.52,13.51,15.7,27.37,5.61,15.01,1.49,30.57-3.22,41.86"/>
+  </g>
+</svg>

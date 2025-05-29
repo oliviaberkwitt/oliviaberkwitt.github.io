@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.16 114.93">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5b3f1d;
+      }
+
+      .cls-2 {
+        fill: #e5e5e5;
+      }
+
+      .cls-3 {
+        fill: #bcbcbc;
+      }
+    </style>
+  </defs>
+  <g id="chocolate-pour">
+    <g id="chocolate-bowl">
+      <path id="bowl-base" class="cls-3" d="M2.13,5.34C.9,13.04-.33,24.09.08,37.39c.44,14.18.69,22.46,4.54,32.16,8.34,21,26.64,31.35,33.17,35.04,6.98,3.95,19.65,11.11,36.58,10.27,11.15-.56,18.96-4.33,29.26-9.31,8.9-4.3,21.91-11.77,35.55-24.59"/>
+      <ellipse id="bowl-top" class="cls-2" cx="70.66" cy="43.15" rx="23.73" ry="78.27" transform="translate(-1.25 84.18) rotate(-61.12)"/>
+      <ellipse id="chocolate-in-bowl" class="cls-1" cx="70.66" cy="43.15" rx="18.08" ry="73.29" transform="translate(-1.25 84.18) rotate(-61.12)"/>
+    </g>
+  </g>
+</svg>

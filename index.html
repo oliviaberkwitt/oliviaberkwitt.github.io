@@ -184,7 +184,7 @@
             <p>
               Cacao pods are carefully cut from the trees by hand using machetes
               or clippers. Timing is important—harvest too early or too late,
-              and the beans won’t develop the right flavor. Once collected, the
+              and the beans will develop the right flavor. Once collected, the
               pods are split open to reveal the beans inside.
             </p>
           </article>
@@ -197,7 +197,7 @@
                   onclick="revealHusk()"
                 >
                   <img
-                    src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/Pod%40300x.png?v=1744691038781"
+                    src="Project1/Images/pod.png"
                     alt="Cacao Pod"
                   />
                 </div>
@@ -207,7 +207,7 @@
                   onclick="revealBeanswhusk()"
                 >
                   <img
-                    src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/Pod-interior%40300x.png?v=1744691034390"
+                    src="Project1/Images/pod-interior.png"
                     alt="Cacao Husk"
                   />
                 </div>
@@ -217,13 +217,13 @@
                   onclick="revealBeans()"
                 >
                   <img
-                    src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/beans-w-husk%40300x.png?v=1744691020851"
+                    src="Project1/Images/beans-w-husk.png"
                     alt="Cacao Beans with Husk"
                   />
                 </div>
                 <div class="image-layer" id="beansLayer">
                   <img
-                    src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/beans%40300x.png?v=1744691024771"
+                    src="Project1/Images/beans.png"
                     alt="Cacao Beans"
                   />
                 </div>
@@ -248,14 +248,15 @@
                 </div>
               </div>
               <div class="clock-container">
+                <div class="readout" id="readout">Day 0 Hour 0</div>
                 <!-- Clock face -->
                 <div class="clock-face" id="clock-face">
                   <div class="inner-glow" id="inner-glow"></div>
                   <!-- ⏱️ Clock hand -->
                   <div class="hand" id="hand"></div>
                 </div>
-                <div class="readout" id="readout">Day 0 Hour 0</div>
-                <button id="startBtn">Start Fermentation</button>
+                
+                <button id="startBtn">How Long Does Fermentation Take?</button>
               </div>
             </div>
           </div>
@@ -267,7 +268,7 @@
     <div class="wrapper-2">
       <div class="horiz-container2 scrollx">
         <section class="three">
-          <article class="left">
+          <article class="three-left">
             <h2>Drying</h2>
             <p>
               Cacao pods are carefully cut from the trees by hand using machetes
@@ -300,7 +301,7 @@
         </div>
         <video id="crack-video" muted loop playsinline>
           <source
-            src="https://cdn.glitch.me/4920a54d-2405-4c40-8f36-48b5be2d783a/cracking-beans.mp4?v=1746133151465"
+            src="Project1/Videos/cracking-beans.mp4"
             type="video/mp4"
           />
         </video>
@@ -318,7 +319,7 @@
         </div>
         <video id="winnow-video" muted loop playsinline>
           <source
-            src="https://cdn.glitch.me/4920a54d-2405-4c40-8f36-48b5be2d783a/winnowing.mp4?v=1746135598104"
+            src="Project1/Videos/winnowing.mp4"
             type="video/mp4"
           />
         </video>
@@ -362,7 +363,7 @@
           </p>
           <video muted autoplay loop playsinline>
             <source
-              src="https://cdn.glitch.me/4920a54d-2405-4c40-8f36-48b5be2d783a/heating_1.mp4?v=1746327842335"
+              src="Project1/Videos/heating_2.mp4"
               type="video/mp4"
             />
           </video>
@@ -380,7 +381,7 @@
           </p>
           <video muted autoplay loop playsinline>
             <source
-              src="https://cdn.glitch.me/4920a54d-2405-4c40-8f36-48b5be2d783a/sugar.mp4?v=1746328132209"
+              src="Project1/Videos/sugar.mp4"
               type="video/mp4"
             />
           </video>
@@ -398,7 +399,7 @@
           </p>
           <video muted autoplay loop playsinline>
             <source
-              src="https://cdn.glitch.me/4920a54d-2405-4c40-8f36-48b5be2d783a/conching.mp4?v=1746328202171"
+              src="Project1/Videos/conching.mp4"
               type="video/mp4"
             />
           </video>
@@ -425,19 +426,19 @@
         <div class="eight-right">
           <img
           id="tempering-spoon"
-          src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/spoon.svg?v=1747168554455"
+          src="Project1/Images/spoon.svg"
           alt="Spoon"
         />
         <img
           id="tempering-choco1"
           class="choco-streak"
-          src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/not-tempered.png?v=1747168795094"
+          src="Project1/Images/tempered.png"
           alt="Chocolate Streak 1"
         />
         <img
           id="tempering-choco2"
           class="choco-streak"
-          src="https://cdn.glitch.global/4920a54d-2405-4c40-8f36-48b5be2d783a/tempered.png?v=1747168799463"
+          src="Project1/Images/not-tempered.png"
           alt="Chocolate Streak 2"
         />
         </div>
@@ -452,7 +453,7 @@
     <div class="wrapper-3">
       <div class="horiz-container3 scrollx">
         <section class="nine">
-          <div>
+          <div class="molding-left">
             <h2>Molding</h2>
             <p>
               At this stage, sugar, milk powder (for milk chocolate), and
@@ -460,10 +461,29 @@
               continuous mixing and aerating—refines the texture and balances
               the flavors, turning gritty paste into smooth chocolate.
             </p>
-          </div>
+             <!-- Button -->
+               <button id="pour-button">Pour Chocolate</button>
+            </div>
+            <div class="pour-wrapper">
+              <!-- Chocolate Stream SVG -->
+              <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="chocolate-line-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.7 230.92">
+                    <path id="chocolate-line" class="chocolate-line"
+                      d="M15.12,1.54c8.16,10.48,17.75,26.42,14.09,42.67-3.58,15.88-16.58,17.71-19.72,33.81-4.07,20.86,15.75,28.1,12.88,49.91-2.7,20.55-21.68,24.76-19.72,41.86,1.33,11.61,10.52,13.51,15.7,27.37,5.61,15.01,1.49,30.57-3.22,41.86"
+                      stroke="#5b3f1d"
+                      stroke-width="8"
+                      fill="none"
+                    />
+                </svg>
+              <!-- Top Pouring Image -->
+                <img src="Project1/Images/bowl-of-chocolate.svg" alt="Pouring Container" class="top-image" />
+              <!-- Bottom Mold Image -->
+               <img src="Project1/Images/mold-without-chocolate.svg" alt="Mold Container" class="bottom-image mold-empty" />
+              <img src="Project1/Images/mold-with-chocolate.svg" alt="Mold Container" class="bottom-image mold-filled" />
+            </div>
         </section>
 
-        <section class="ten">
+        <section class="wrap">
           <div>
             <h2>Wrapping</h2>
             <p>
@@ -473,6 +493,7 @@
               quality, story, or origin of the bar inside.
             </p>
           </div>
+          <a href="bar.html" target="_blank">Click to See Animation</a>
         </section>
       </div>
     </div>
@@ -583,49 +604,61 @@
 
     <script>
   document.addEventListener("DOMContentLoaded", () => {
-    let streakIndex = 0;
+  // Spoon click animation
+  let streakIndex = 0;
+  const spoon = document.getElementById("tempering-spoon");
+  const streaks = [
+    document.getElementById("tempering-choco1"),
+    document.getElementById("tempering-choco2")
+  ];
+  const description = document.getElementById("tempering-description");
+  const descriptions = [
+    "This is what untempered chocolate looks like—dull, streaky, and it melts too easily. Click the spoon again!",
+    "This is tempered chocolate—shiny, smooth, and it has a nice snap when broken."
+  ];
 
-    const spoon = document.getElementById("tempering-spoon");
-    const streaks = [
-      document.getElementById("tempering-choco1"), // untempered
-      document.getElementById("tempering-choco2")  // tempered
-    ];
-    const description = document.getElementById("tempering-description");
+  spoon.addEventListener("click", () => {
+    streaks.forEach(s => gsap.set(s, { opacity: 0 }));
 
-    const descriptions = [
-      "This is what untempered chocolate looks like—dull, streaky, and it melts too easily. Click the spoon again!",
-      "This is tempered chocolate—shiny, smooth, and it has a nice snap when broken."
-    ];
+    gsap.to(spoon, {
+      x: 100,
+      duration: 0.4,
+      ease: "power2.out",
+      onComplete: () => {
+        gsap.set(streaks[streakIndex], { opacity: 1 });
+        description.textContent = descriptions[streakIndex];
+        gsap.to(spoon, {
+          x: 0,
+          duration: 0.4,
+          ease: "power1.inOut"
+        });
+        streakIndex = (streakIndex + 1) % streaks.length;
+      }
+    });
+  });
 
-    spoon.addEventListener("click", () => {
-      // Hide all streaks first
-      streaks.forEach((s) => {
-        gsap.set(s, { opacity: 0 });
-      });
+  // Chocolate line hiding on load
+  const line = document.getElementById("chocolate-line");
+  const pathLength = line.getTotalLength();
+  line.style.strokeDasharray = pathLength;
+  line.style.strokeDashoffset = pathLength;
+});
 
-      // Move spoon, then show the appropriate streak and update text
-      gsap.to(spoon, {
-        x: 100,
-        duration: 0.4,
-        ease: "power2.out",
-        onComplete: () => {
-          // Reveal streak
-          gsap.set(streaks[streakIndex], { opacity: 1 });
+</script>
 
-          // Change the paragraph text
-          description.textContent = descriptions[streakIndex];
-
-          // Reset spoon position
-          gsap.to(spoon, {
-            x: 0,
-            duration: 0.4,
-            ease: "power1.inOut"
-          });
-
-          // Toggle to the next streak
-          streakIndex = (streakIndex + 1) % streaks.length;
-        }
-      });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  document.getElementById("pour-button").addEventListener("click", () => {
+    // Animate the chocolate line pouring
+    gsap.to("#chocolate-line", {
+      strokeDashoffset: 0,
+      duration: 2,
+      ease: "power2.out",
+      onComplete: () => {
+        // After pour is complete, fade in the filled mold
+        gsap.to(".mold-empty", { opacity: 0, duration: 0.1 });
+        gsap.to(".mold-filled", { opacity: 1, duration: 0.1, ease: "power1.inOut" });
+      }
     });
   });
 </script>
