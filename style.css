@@ -22,9 +22,6 @@ h1 {
   font-family: "Yeseva One", serif;
   font-weight: 400;
   font-style: normal;
-  padding: 4rem;
-  position: relative;
-  top: 60%;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -45,8 +42,6 @@ h3 {
 
 @media (max-width: 640px) {
   h1 {
-    position: absolute;
-    top:0%;
     font-size: clamp(3.5rem, 2.25rem + 3.125vw, 6rem);
   }    
   
@@ -59,29 +54,9 @@ h3 {
   }
 }
 
-/* start of section negativeone (From Bean to Bar) */
-
-.negativeone {
-    /* background-color: rgb(159, 117, 81); */
-    background: linear-gradient(90deg,rgba(55, 61, 31, 0.5) 0%, rgba(171, 78, 104, 0.5) 100%), url(Project1/Images/pods-on-branch.webp);
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-.text-box-with-button {
-  position: relative;
-  top: 45%;
-  left: 4rem;
-  border-radius: 30px;
-  background-color: rgba(113, 119, 68, 0.75);
-  color: #edefdf;
-}
-
-.text-box-with-button p {
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 300;
-  display:inline-block;
+.content {
+    height: 200vh;
+    position: relative;
 }
 
 button {
@@ -89,6 +64,7 @@ button {
   font-size: 2rem;
   background-color: #ab4e68;
   border: none;
+  border-radius: 30px;
   box-shadow: 0 3px 8px rgb(0 0 0 / 0.9);
 }
 
@@ -96,43 +72,27 @@ button {
   button {
     font-size: clamp(1.5rem, 1.25rem + 0.625vw, 2rem);
   }
-  
-  .text-box-with-button {
-    top: 25%;
-  }
 }
 
-#startBtn {
-  font-size:2rem;
-  width: 600px;
-}
+/* start of section negativeone (From Bean to Bar) */
 
-/*         #startBtn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #8d6e63;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+.negativeone {
+    background: linear-gradient(90deg,rgba(55, 61, 31, 0.5) 0%, rgba(171, 78, 104, 0.5) 100%), url(Project1/Images/pods-on-branch.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 4rem 0 4rem 4rem;
 
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
 
-#startBtn:hover {
-    background-color: #6d4c41;
-} */
-
-.content {
-    height: 200vh;
-    position: relative;
 }
 
 #go-to-bottom {
-    position: absolute;
-    width: 300px;
-    height: auto;
-    padding: 20px;
-    border-radius: 30px;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 @media (max-width: 640px) {
@@ -140,17 +100,6 @@ button {
     width: clamp(180px, 50vw, 200px);
     padding: 12px;
   }
-}
-
-#go-to-top {
-    position: absolute;
-    bottom: 0px;
-}
-
-#go-to-bottom:hover {
-    background-color: #edefdf;
-    cursor: default;
-    color:#ab4e68;
 }
 
 
@@ -226,6 +175,11 @@ button {
 
 .branch {
   fill: #2c2200;
+}
+
+#go-to-top {
+    position: absolute;
+    bottom: 0px;
 }
 
 @media (max-width: 640px){
@@ -442,10 +396,6 @@ button {
   font-size: 1.5rem;
   line-height: 1.5;
   
-  /* background-color: rgba(55, 61, 31, 0.8);
-  padding: 8px;
-  border-radius: 20px; */
-  
   margin-left: 4rem;
 }
 
@@ -492,6 +442,11 @@ button {
   }
 }
 
+#startBtn {
+  font-size:2rem;
+  width: 600px;
+}
+
 /* start of section three (Drying) */
 
 .three { 
@@ -518,17 +473,6 @@ button {
   flex-direction: column;
   align-items: flex-start; 
 }
-
-/* .three h2 {
-  color: rgba(55, 61, 31, 1);
-} */
-
-/* .three p {
-  background-color: rgba(55, 61, 31, 0.75);
-  padding: 16px;
-  border-radius: 20px;
-  width: 50%;
-} */
 
 @media (max-width: 640px) {
   .three p {
@@ -887,6 +831,12 @@ button {
   left: 20%;
   min-height: 100%;
   margin: 0 auto 2rem;
+}
+
+.molding-left button:hover {
+  background-color: #edefdf;
+  cursor: default;
+  color:#ab4e68;
 }
 
 .top-image {
