@@ -484,11 +484,16 @@
               to the experience. A well-designed wrapper can reflect the
               quality, story, or origin of the bar inside.
             </p>
+            <p>
+            <!-- <a href="bar2.html" target="_blank">Click to See Animation</a></p> -->
           </div>
-          <a href="bar.html" target="_blank">Click to See Animation</a>
+          
+        <!-- choc bar here -->
+        <div><iframe  frameborder="0" style="width:100%;height:100%;" src="bar2.html" frameborder="0"></iframe></div>
         </section>
-      </div>
-    </div>
+        
+      </div> <!-- end scrollx -->
+    </div> <!-- end wrapper3 -->
 
     <section class="eleven">
       <div>
@@ -532,6 +537,20 @@
 
       // Horizontal scroll for container 3
       const sections3 = gsap.utils.toArray(".horiz-container3 section");
+      // const tl = gsap.timeline({
+      //   xPercent: -100 * (sections2.length - 1),
+      //   scrollTrigger: {
+      //     trigger: ".wrapper-3",
+      //     start: "top top",
+      //     end: () => "+=" + window.innerWidth * sections3.length,
+      //     scrub: 0.3,
+      //     pin: true,
+      //     anticipatePin: 1,
+
+      //   }
+      // })
+      // tl.to()
+      //try for a timeline instead
       const scrollTween3 = gsap.to(sections3, {
         xPercent: -100 * (sections2.length - 1),
         ease: "power1.out",
@@ -544,6 +563,7 @@
           anticipatePin: 1,
         },
       });
+      // I think this is where it goes.
     </script>
 
     <script>
